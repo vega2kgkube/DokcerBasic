@@ -32,6 +32,7 @@
 * 빌드 도구, 개발 도구 제외
 * 프로덕션 실행용 최적화
 
+####  예시
 * python:3.9-alpine    → 50MB 미만  (가장 작음)
 * python:3.9-slim      → 100MB 정도 (가벼움)  
 * python:3.9-bullseye  → 300MB 정도 (표준)
@@ -47,7 +48,7 @@
 * Alpine 호환성 문제 없음
 * 적절한 크기 절충
 
-##### Bullseye/Bookworm 선택 when:
+##### Bullseye/Bookworm 선택:
 * 풀 패키지 필요
 * 개발/빌드 환경
 * 호환성 최대화

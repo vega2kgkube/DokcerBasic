@@ -1,5 +1,5 @@
 # Node.js 런타임 사용
-FROM node:16-alpine
+FROM node:22.20.0-slim
 
 # 컨테이너 내부 작업 폴더
 WORKDIR /app
@@ -21,4 +21,4 @@ ENV PORT=3000
 EXPOSE 3000
 
 # 6. 앱 실행
-CMD ["node", "app.js"]
+CMD ["npm", "start"]
