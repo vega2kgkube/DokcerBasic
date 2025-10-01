@@ -1,5 +1,5 @@
 # 단계 1: 베이스 이미지 선택
-FROM node:16-alpine
+FROM node:22.20.0-slim
 
 # 단계 2: 메타정보 추가
 LABEL maintainer="dev@example.com"
@@ -29,4 +29,4 @@ HEALTHCHECK --interval=30s --timeout=3s \
   CMD node healthcheck.js
 
 # 단계 10: 실행 명령
-CMD ["node", "app.js"]
+CMD ["npm", "start"]
