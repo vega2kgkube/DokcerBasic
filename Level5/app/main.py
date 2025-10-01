@@ -27,7 +27,7 @@ def say_hello(name: str):
 # 건강 상태 확인
 @app.get("/health")
 def health_check():
-    return {"status": "healthy", "service": "fastapi-docker"}
+    return {"status": "healthy", "service": "fastapi-app"}
 
 # 서버 정보
 @app.get("/info")
