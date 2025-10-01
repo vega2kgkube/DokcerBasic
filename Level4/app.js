@@ -25,7 +25,7 @@ app.get('/health', (req, res) => {
   res.status(200).json({ 
     status: 'OK', 
     timestamp: new Date().toISOString(),
-    service: 'node-docker-app'
+    service: 'node-app'
   });
 });
 
