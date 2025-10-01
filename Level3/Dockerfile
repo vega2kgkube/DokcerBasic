@@ -2,6 +2,7 @@
 FROM node:22.20.0-slim
 
 # 컨테이너 내부 작업 폴더
+RUN mkdir /app
 WORKDIR /app
 
 # 1. package.json 먼저 복사 (캐싱 활용)
